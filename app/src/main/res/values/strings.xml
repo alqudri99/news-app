@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">News App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder_title">Sebuah Judul Terduga Pencurian Angka Numerik Oleh Reuters</string>
+    <string name="covid_19">COVID 19</string>
+    <string name="business">BUSINESS</string>
+</resources>
