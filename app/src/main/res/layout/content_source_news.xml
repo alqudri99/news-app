@@ -28,11 +28,12 @@
         <Button
             android:id="@+id/bt_news_source_read"
             android:layout_margin="5dp"
+            app:backgroundTint="#0091EA"
             android:layout_gravity="right"
-            android:layout_width="70dp"
+            android:layout_width="80dp"
             android:textColor="#ffff"
             android:background="@drawable/btn_backgoround_read"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:textSize="10dp"
             android:text="Read"
             />
