@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView app:cardElevation="5dp"
+    android:id="@+id/base_content_slider"
     android:layout_margin="15dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="150dp"
@@ -12,12 +13,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/img_small_item_headlines"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:scaleType="centerCrop"
             tools:src="@tools:sample/backgrounds/scenic"
             />
         <TextView
+            android:id="@+id/tv_source_small_headlines"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reuters"
@@ -26,6 +29,7 @@
             android:layout_marginLeft="5dp"
             />
         <TextView
+            android:id="@+id/tv_title_small_headlines"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"

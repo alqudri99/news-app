@@ -5,4 +5,6 @@
     <string name="placeholder_title">Sebuah Judul Terduga Pencurian Angka Numerik Oleh Reuters</string>
     <string name="covid_19">COVID 19</string>
     <string name="business">BUSINESS</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="al_jazeera">Al Jazeera</string>
 </resources>

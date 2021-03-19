@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/headline">
+
+    <fragment
+        android:id="@+id/headline"
+        android:name="com.alqudri.newsapp.ui.news.HeadlineFragment"
+        android:label="fragment_headline"
+        tools:layout="@layout/fragment_headline" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.alqudri.newsapp.ui.news.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.alqudri.newsapp.ui.news.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>

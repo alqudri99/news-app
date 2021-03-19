@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alqudri.newsapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.detail.DetailActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.detail.WebViewActivity"></activity>
+        <activity android:name=".ui.news.MainActivity" />
+        <activity android:name=".ui.detail.DetailActivity" />
+        <activity android:name=".ui.main.NewsChoiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

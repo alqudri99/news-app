@@ -5,7 +5,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".ui.main.HeadlineFragment">
+    tools:context=".ui.news.HeadlineFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -42,14 +48,24 @@
                 android:text="HEADLINE"
                 />
 
-            <androidx.recyclerview.widget.RecyclerView
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/rv_headline"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:listitem="@layout/content_slider_headline"
-                tools:itemCount="8"
-                android:orientation="horizontal"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
+                android:layout_height="250dp"
+                android:padding="10dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="right"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="5dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#922C2C2C"
+                app:sliderIndicatorUnselectedColor="#C8FFFFFF"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="false" />
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -63,6 +79,7 @@
                 android:layout_marginStart="15dp" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_small_covid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/content_slider_small"
@@ -70,6 +87,7 @@
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 />
+
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -83,16 +101,15 @@
                 android:layout_marginStart="15dp" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_small_business"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/content_slider_small"
                 tools:itemCount="8"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="60dp"
                 />
-
-
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</LinearLayout >
