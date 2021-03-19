@@ -3,10 +3,10 @@
     <item
         android:id="@+id/headline"
         android:icon="@drawable/ic_baseline_assessment_24"
-        android:title="Beranda" />
+        android:title="Headline" />
 
     <item
         android:id="@+id/search"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="Kantor" /> 
+        android:title="Search" />
 </menu>
